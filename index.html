@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="CodinDesign">
+
+    <title>Cafeteria</title>
+</head>
+
+<body>
+    <!-- cabeçalho -->
+    <header id="home">
+        <nav>
+            <div id="topo">
+                <ul id="links">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#sobre">SOBRE</a></li>
+                    <li><a href="#produtos">PRODUTOS</a></li>
+                    <li><a href="#endereco">ENDEREÇO</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="banner-grid">
+
+            <div id="banner">
+                <h2 id="texto-banner">Cafeteria</h2>
+                <img src="imagens/capa.jpg" id="capa" alt="Foto de cafe">
+
+            </div>
+
+            <div id="fotos-banner">
+
+                <img src="imagens/foto1.jpg" class="grid-banner" alt="imagem de cafe">
+                <img src="imagens/foto2.jpg" class="grid-banner" alt="imagem de cafe">
+                <img src="imagens/foto3.jpg" class="grid-banner" alt="imagem de cafe">
+                <img src="imagens/foto4.jpg" class="grid-banner" alt="imagem de cafe">
+
+
+            </div>
+        </div>
+
+    </header>
+
+    <!-- SOBRE -->
+    <section id="sobre">
+        <div id="cont-sobre">
+            <h2 id="text-sobre">SOBRE A CAFETERIA</h2>
+            <p id="p-sobre">Fundada com paixão pelo café e pela boa gastronomia, a Cafeteria nasceu do sonho de criar um
+                espaço
+                acolhedor onde cada detalhe faz a diferença. Nosso compromisso é oferecer produtos frescos e de alta
+                qualidade, desde o espresso perfeito até sanduíches feitos na hora, com ingredientes
+                selecionados.<br><br>
+
+                Aqui, acreditamos que o melhor sabor vem da harmonia entre natureza e cuidado — “Use os produtos da
+                natureza pelo seu valor, mas nunca cedo demais, nem tarde demais.” Nosso menu é pensado para despertar
+                os sentidos e proporcionar momentos de prazer em cada visita.</p>
+
+            <img src="imagens/interior.jpg" id="img-interior"><br>
+            <div id="horario">
+                <p><strong>Horário de funcionamento:</strong> todos os dias das 6h às 17h.</p>
+                <p><strong>Endereço:</strong> Rua das Flores, nº 15, Bairro Centro, CEP 12345-678, São Paulo – SP.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- produtos -->
+    <section id="produtos">
+        <div id="cont-produtos">
+            <h2 id="text-produtos">Produtos</h2>
+
+        </div>
+        <div id="ta-produto">
+            <table id="tabela" cellpadding="8" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Comidas</th>
+                        <th>Bebidas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <strong>Panquecas de Mirtilo</strong><br>
+                            Com calda, manteiga e muitos mirtilos<br>
+                            <strong>R$ 8,50</strong>
+                        </td>
+                        <td>
+                            <strong>Café Espresso</strong><br>
+                            Tradicional espresso forte e encorpado<br>
+                            <strong>R$ 4,00</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Ovos Mexidos</strong><br>
+                            Com pimentão vermelho assado, alho e cebolinha<br>
+                            <strong>R$ 7,50</strong>
+                        </td>
+                        <td>
+                            <strong>Suco Natural</strong><br>
+                            Suco de laranja espremido na hora<br>
+                            <strong>R$ 5,00</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Waffle Belga</strong><br>
+                            Feito com massa de baunilha e farinha maltada<br>
+                            <strong>R$ 7,50</strong>
+                        </td>
+                        <td>
+                            <strong>Chá Gelado</strong><br>
+                            Chá preto com limão e hortelã<br>
+                            <strong>R$ 4,50</strong>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- add img: -->
+
+    <!-- Emdereço -->
+    <section id="endereco">
+        <div id="cont-endereco">
+            <h2 id="text-endereco">Endereço</h2>
+
+            <p id="nome-endereco">Endereço aleatorio</p>
+
+            <img id="mapa" src="imagens/mapa.jpg" alt="imagem de mapa">
+
+            <div id="formulario">
+
+                <p id="info-mapa"><strong>Para sua informação!</strong>Oferecemos serviço completo de buffet para
+                    qualquer evento, grande ou pequeno.
+                    Entendemos as suas necessidades e atenderemos aos mais altos critérios de todos: aparência e
+                    sabor.<br><br>
+
+                    Reserve uma mesa, pergunte sobre o especial de hoje ou simplesmente envie-nos uma mensagem:</p>
+                <form id="formulario-data" action="#" method="post">
+                    <div id="campos-form">
+                        <input type="text" name="nome" placeholder="Nome"><br>
+                        <input type="text" name="quantidade" placeholder="Quantas pessoas"><br>
+                        <input type="datetime-local" name="data"><br>
+                        <input type="text" name="observacao" placeholder="Observações"><br>
+                        <div id="btn">
+                            <button type="submit" id="botao-form">ENVIAR MENSAGEM</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+
+        <p>Feito por CodinDesign</p>
+
+
+    </footer>
+
+
+
+</body>
+
+</html>

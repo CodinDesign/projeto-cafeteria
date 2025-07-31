@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-size: 20px;
+
+}
+
+
+body {
+    margin: 0;
+    background-color: #d3d3d3;
+
+
+}
+
+#topo {
+    position: fixed;
+    width: 100vw;
+    height: auto;
+    align-items: center;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-around;
+    z-index: 999;
+
+}
+
+#links {
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+#links li {
+    padding: 10px 15px;
+
+}
+
+#links li:hover {
+    background-color: #727272;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+#capa {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+
+}
+
+#banner {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#texto-banner {
+    color: #ffffff;
+    font-size: 4em;
+    position: absolute;
+    font-family: "Playwrite PL", cursive;
+    text-shadow:
+        -1px -1px 0 #000000,
+        1px -1px 0 #000000,
+        -1px 1px 0 #000000,
+        1px 1px 0 #000000;
+    z-index: 3;
+}
+
+#banner-grid {
+    position: relative;
+    overflow: hidden;
+
+}
+
+#fotos-banner {
+    position: absolute;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 5%;
+    padding: 5px;
+    z-index: 2;
+    
+
+}
+
+.grid-banner {
+    width: 30vw;
+    height: 30vh;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #000000;
+    z-index: 5;
+}
+
+#cont-sobre {
+    text-align: center;
+}
+
+#text-sobre {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    width: 40vw;
+    margin: 15px auto 0 auto;
+    border-radius: 3px;
+    box-shadow: 0 0 15px #000000;
+
+}
+
+#p-sobre {
+    font-family: "Lobster", sans-serif;
+    border: 2px dashed #a5a4a4;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px;
+}
+
+#img-interior {
+    width: 70vw;
+    height: 60vh;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #000000;
+
+
+}
+
+#horario {
+    text-align: left;
+    padding: 10px;
+    margin: 15px;
+    border: 2px dashed #a5a4a4;
+    border-radius: 10px;
+
+}
+
+#cont-produtos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#text-produtos {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    width: 40vw;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 0 15px #000000;
+}
+
+
+#tabela {
+    width: 95vw;
+    border: 2px dashed #a5a4a4;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+
+}
+
+#cont-endereco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#text-endereco {
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    width: 40vw;
+    border-radius: 3px;
+    box-shadow:
+        0 0 15px #000000;
+}
+
+#nome-endereco {
+    font-weight: bold;
+}
+
+#mapa {
+    width: 70vw;
+    height: 60vh;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #000000;
+}
+
+#info-mapa {
+    margin: 10px;
+    padding: 10px;
+}
+
+#formulario {
+    border: 2px dashed #a5a4a4;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px;
+}
+
+#campos-form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+}
+
+#botao-form {
+    width: 40%;
+    background: #000000;
+    color: #ffffff;
+    box-shadow: 0 0 15px #000000;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#botao-form:hover {
+    background: #727272;
+}
+
+#footer {
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    background: #ffffff;
+    box-shadow: 0 0 15px #000000;
+}
+
+/** Responsividade **/
+
+/* Estilos responsivos para telas com largura máxima de 760px */
+@media (max-width: 760px) {
+  
+  /* Menu de links - empilhamento vertical centralizado com espaçamento */
+  #links {
+    display: flex;            /* Garantir que seja flex container */
+    flex-direction: column;
+    gap: 0.625rem;            /* 10px convertido para rem (1rem = 16px) */
+    align-items: center;
+  }
+
+  /* Texto do banner - tamanho maior e centralizado */
+  #texto-banner {
+   display: none;
+  }
+
+  /* Elementos visuais que não devem aparecer em telas pequenas */
+  .grid-banner {
+    display: none;
+    
+    
+  }
+
+  /* Textos principais - largura ajustada e tamanho legível */
+  #text-sobre,
+  #text-produtos,
+  #text-endereco {
+    width: 90vw;              /* 90% da largura da viewport */
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;       /* Centraliza horizontalmente */
+  }
+
+  /* Imagens e mapa - responsivos, mantendo proporção */
+  #img-interior,
+  #mapa {
+    width: 90vw;
+    height: auto;
+    display: block;           /* Remove espaçamento em linha */
+    margin-left: auto;
+    margin-right: auto;       /* Centraliza */
+  }
+
+  /* Container de fotos do banner - espaçamento menor */
+  #fotos-banner {
+    display: none;
+  }
+
+  /* Botão do formulário - ocupa boa parte da largura */
+  #botao-form {
+    width: 80%;
+    max-width: 300px;         /* Limita largura máxima para não esticar demais */
+    margin-left: auto;
+    margin-right: auto;       /* Centraliza */
+    display: block;
+  }
+
+  /* Tabela responsiva com scroll horizontal se necessário */
+  #tabela {
+    width: 98vw;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Suaviza o scroll no iOS */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
