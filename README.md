@@ -1,6 +1,6 @@
 # Projeto Cafeteria - Landing Page Responsiva
 
-Landing page institucional para uma cafeteria fictícia, criada com HTML5 e CSS3, apresentando design moderno, organizado e totalmente responsivo.
+Landing page para uma cafeteria fictícia, criada com HTML5 e CSS3, apresentando design moderno, organizado e totalmente responsivo.
 
 ---
 
